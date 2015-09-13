@@ -11,11 +11,9 @@
 
 namespace itinance;
 
-use Asm89\Twig\CacheExtension\CacheProviderInterface;
 use Asm89\Twig\CacheExtension\CacheProvider\DoctrineCacheAdapter;
 use Doctrine\Common\Cache\Cache;
-use Symfony\Component\DependencyInjection\Container;
-use Symfony\Component\DependencyInjection\ContainerAware;
+use Slame\WhiteLabelBundle\Branding\SiteContext;
 
 /**
  * Class DoctrineCacheAdapterWithSiteContext
@@ -37,14 +35,16 @@ class DoctrineCacheAdapterWithSiteContext extends DoctrineCacheAdapter
      */
     private $contextNamespace;
 
+
     /**
      * @param Cache $cache
+     * @param SiteContext $siteContext
      */
-    public function __construct(Cache $cache, Container $container)
+    public function __construct(Cache $cache, SiteContext $siteContext)
     {
         parent::__construct($cache);
 
-        $this->contextNamespace = $container->get('site_context')->getContext()['namespace'];
+        $this->contextNamespace = $siteContext->getContext()['namespace'];
     }
 
     /**
