@@ -1,0 +1,19 @@
+{
+  "name": "itinance/doctrine-cache-adapter-with-site-context",
+  "authors": [
+    {
+      "name": "hagen huebel",
+      "email": "hhuebel@itinance.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "itinance\\": "src/"
+    }
+  },
+  "require": {
+    "php": ">=5.4.4",
+    "emanueleminotto/twig-cache-bundle": "^1.0",
+    "simonoche/white-label-bundle": "^0.1.2"
+  }
+}
