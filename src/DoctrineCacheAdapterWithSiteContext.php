@@ -3,7 +3,7 @@
  *
  * (C) ITinance GmbH <https://github.com/itinance/>
  *
- * Author: Hagen Huebel, hhuebel@itinance.com
+ * Author: Hagen Hübel, hhuebel@itinance.com
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.

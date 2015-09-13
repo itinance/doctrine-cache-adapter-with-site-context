@@ -33,7 +33,7 @@ in app/config/services.yml add the following
         class: itinance\DoctrineCacheAdapterWithSiteContext
         arguments:
             - @cache_service
-            - @service_container
+            - @site_context
 ```
 
 @cache_service could be configured like this:
