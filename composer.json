@@ -14,6 +14,6 @@
   "require": {
     "php": ">=5.4.4",
     "emanueleminotto/twig-cache-bundle": "^1.0",
-    "simonoche/white-label-bundle": "^0.1.2"
+    "simonoche/white-label-bundle": "^1.0.4"
   }
 }
